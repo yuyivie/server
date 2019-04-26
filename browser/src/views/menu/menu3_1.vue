@@ -9,7 +9,7 @@
     name: 'Menu3_1',
     data() {
       return {
-        pageName: '菜单3-1'
+        pageName: '菜单3-1AA'
       }
     }
   }

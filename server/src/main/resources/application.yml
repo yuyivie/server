@@ -9,16 +9,14 @@ server:
 spring:
   profiles:
     active: dev
-    include: druid,mybatisplus,shiro
+    include: druid,mybatisplus,shiro,log4j2
   redis:
     host: localhost
     port: 6379
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/${db}?characterEncoding=UTF-8&useSSL=false
-    username: root
-    password: root
-logging:
-  path: ./logs
-  level:
-    com.abc.dao: debug
+    username: admin
+    password: admin
+
+

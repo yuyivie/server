@@ -17,7 +17,7 @@
               v-loading.body="tableLoading"
               element-loading-text="加载中"
               border fit highlight-current-row>
-      <el-table-column prop="uid" label="用户id"></el-table-column>
+      <el-table-column prop="uid" label="用户id@"></el-table-column>
       <el-table-column prop="uname" label="登录名"></el-table-column>
       <el-table-column prop="nick" label="昵称"></el-table-column>
       <el-table-column label="角色">
@@ -74,11 +74,11 @@
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible" width="20%">
       <el-form :rules="rules" ref="dataForm" :model="temp" label-position="left" label-width="120px">
 
-        <el-form-item label="登录名" prop="uname" v-if="dialogStatus=='create'">
+        <el-form-item label="登录名11" prop="uname" v-if="dialogStatus=='create'">
           <el-input v-model="temp.uname"></el-input>
         </el-form-item>
 
-        <el-form-item label="昵称" prop="nick">
+        <el-form-item label="昵称11" prop="nick">
           <el-input v-model="temp.nick"></el-input>
         </el-form-item>
 
@@ -262,6 +262,7 @@
 
       //查询
       fetchData(current) {
+
         if(current){
           this.tablePage.current = current
         }

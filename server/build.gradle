@@ -15,11 +15,12 @@ buildscript {
 //应用插件
 apply plugin: 'java'
 apply plugin: 'idea'
+apply plugin: 'maven'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 //项目设置
-group 'com.abc'
+group 'com.mageline'
 version '1.0'
 
 //编译设置
@@ -74,6 +75,21 @@ configurations {
 bootRun {
     // Use Spring Boot DevTool only when we run Gradle bootRun task
     classpath = sourceSets.main.runtimeClasspath + configurations.dev
+    
+}
+task writeNewPom << {
+    pom {
+        project {
+            inceptionYear '2008'
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+        }
+    }.writeTo("$buildDir/pom.xml")
 }
 
 /**

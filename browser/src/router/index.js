@@ -62,7 +62,7 @@ export const asyncRouterMap = [
         path: 'user_manage',
         name: 'user_manage',
         component: _import('_system/user/index'),
-        meta: { perm: 'm:sys:user', title: '用户管理', icon: 'chart', noCache: true }
+        meta: { perm: 'm:sys:user', title: '用户管理2', icon: 'chart', noCache: true }
       },
       {
         path: 'role_manage',

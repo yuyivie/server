@@ -19,7 +19,7 @@
               v-loading.body="tableLoading"
               element-loading-text="Loading"
               border fit highlight-current-row>
-      <el-table-column prop="rid" label="角色id" ></el-table-column>
+      <el-table-column prop="rid" label="角色id2" ></el-table-column>
       <el-table-column prop="rname" label="角色名" ></el-table-column>
       <el-table-column prop="rdesc" label="角色描述" ></el-table-column>
       <el-table-column prop="rval" label="角色值" ></el-table-column>

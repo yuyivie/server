@@ -24,7 +24,7 @@
 克隆项目到本地：
 
 ~~~
-git clone https://github.com/CaiBaoHong/biu
+git clone https://github.com/yuy/biu
 ~~~
 
 执行`_sql/biu.sql`导入mysql数据库
@@ -174,7 +174,7 @@ http {
 
 **接口权限元数据**
 
-接口的权限元数据是定义在`server/com/abc/controller`目录下的各种Controller中的，
+接口的权限元数据是定义在`server/com/mageline/controller`目录下的各种Controller中的，
 
 在Controller的类上，会优先查找`@PermInfo`的value属性作为接口模块的权限名，查找`@RequiresPermissions`的值作为接口模块的权限值。
 如果没有，则会把Controller类名作为接口模块权限的名称，把`@RequestMapping`作为接口模块权限的权限值。
